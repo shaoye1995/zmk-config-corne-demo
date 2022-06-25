@@ -43,7 +43,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: firmware
-          path: corne_left_nice_nano_v2.uf2
+          path: corne_left_nrfmicro_13.uf2
       - name: West Build (Corne Right)
         run: west build --pristine -s zmk/app -b nrfmicro_13 -- -DSHIELD=corne_right -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
 
